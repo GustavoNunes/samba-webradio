@@ -1,5 +1,17 @@
-<ion-view view-title="Rádio">
+<ion-view view-title="Rádio" ng-controller="RadioCtrl">
   <ion-content>
-    <h1>Rádio</h1>
+    <ion-audio-track track="webradio">
+      <div class="list list-inset">
+	<div class="item item-thumbnail-left">
+	  <ion-audio-controls>
+	    <a class="button button-icon icon" ion-audio-play></a>
+	    <ion-spinner icon="ios"></ion-spinner>
+	  </ion-audio-controls>
+	</div>
+	<div class="item">
+	  <ion-audio-progress-bar track="track" display-time></ion-audio-progress-bar>
+	</div>
+      </div>
+    </ion-audio-track>
   </ion-content>
 </ion-view>

@@ -1,4 +1,4 @@
-angular.module('webradio', ['ionic', 'webradio.controllers'])
+angular.module('webradio', ['ionic', 'ionic-audio', 'webradio.controllers'])
     .run(function($ionicPlatform) {
 	$ionicPlatform.ready(function() {
 	    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
