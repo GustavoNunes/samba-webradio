@@ -2,7 +2,8 @@
 <widget id="com.ionicframework.webradio675857"
 	version="0.0.1"
 	xmlns="http://www.w3.org/ns/widgets"
-	xmlns:gap="http://phonegap.com/ns/1.0">
+	xmlns:gap="http://phonegap.com/ns/1.0"
+	versionCode="1">
   <name>Vivendo a Cultura do Samba</name>
   <description>
     Uma webradio de samba paulista.
