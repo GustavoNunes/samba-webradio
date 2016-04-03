@@ -1,11 +1,17 @@
 <ion-view view-title="Rádio" ng-controller="RadioCtrl">
-  <ion-content scroll="false">
-    <div class="card radio-player">
-      <ion-toggle ng-model="webradio.play"
+  <ion-content scroll="false" class="radio-page">
+    <div class="card">
+      <ion-toggle ng-model="webradio.playing"
 		  ng-change="toggleRadio()"
-		  toggle-class="toggle-calm">
+		  toggle-class="toggle-positive">
 	Rádio	
       </ion-toggle>
+    </div>
+    <div ng-if="webradio.loading === true"
+	 class="card radio-spinner">
+      <div class="item">
+	<ion-spinner></ion-spinner>
+      </div>
     </div>
   </ion-content>
 </ion-view>
