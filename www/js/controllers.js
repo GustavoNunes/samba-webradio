@@ -1,7 +1,4 @@
 angular.module('webradio.controllers', [])
-
-    .controller('AppCtrl', function($scope, $ionicModal, $timeout) {})
-
     .controller('RadioCtrl', function($scope) {
 	var audio = null;
 	
@@ -21,7 +18,4 @@ angular.module('webradio.controllers', [])
 		audio = null;
 	    }	    
 	};
-    })
-
-    .controller('PlaylistCtrl', function($scope, $stateParams) {
     });

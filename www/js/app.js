@@ -16,28 +16,10 @@ angular.module('webradio', ['ionic', 'webradio.controllers'])
     })
     .config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider
-	    .state('app', {
-		url: '/app',
-		abstract: true,
-		templateUrl: 'templates/menu.html',
-		controller: 'AppCtrl'
-	    })
-	    .state('app.radio', {
+	    .state('radio', {
 		url: '/radio',
-		views: {
-		    'menuContent': {
-			templateUrl: 'templates/radio.html'
-		    }
-		}
-	    })
-	    .state('app.sobre', {
-		url: '/sobre',
-		views: {
-		    'menuContent': {
-			templateUrl: 'templates/sobre.html'
-		    }
-		}
+		templateUrl: 'templates/radio.html'
 	    });
 	// if none of the above states are matched, use this as the fallback
-	$urlRouterProvider.otherwise('/app/radio');
+	$urlRouterProvider.otherwise('/radio');
     });
